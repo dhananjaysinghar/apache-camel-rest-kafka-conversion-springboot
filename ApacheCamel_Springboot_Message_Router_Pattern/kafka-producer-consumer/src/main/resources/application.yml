@@ -1,0 +1,12 @@
+app:
+  kafka:
+    enabled: true
+    host: ${kafka_bootstrap_servers:192.168.29.247:9092}
+    camel-topic: apache_camel_topic
+    booking-topic: booking_topic
+    invoice-topic: invoice_topic
+    max-poll-record: 1000
+    consumer-group-id: booking-consumer-test
+
+server:
+  port: 8080
